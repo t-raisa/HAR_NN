@@ -23,6 +23,7 @@ Optional check runs (CLIP ViT-B/16, one change each; the run stopped before they
 | Smaller ViT-S | 86M → 22M weights | Not reached. |
 
 **Takeaways**
+
 - CLIP ViT-B/16 is the best model: **90.0% test**, and it used **24 of the 25 epochs**, so the teacher's 20–25 epochs
   were needed. Early stopping never triggered for it.
 - ConvNeXt-Tiny is the best CNN (85.5%). EfficientNet-B0 and ResNet-50 stay around 74–75%.
