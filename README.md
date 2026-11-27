@@ -6,6 +6,7 @@
 - `notebooks/02_har_efficientnet.ipynb` — model 1: EfficientNetB0 transfer learning in Keras (76.4% validation accuracy)
 - `notebooks/03_har_clip_vit.ipynb` — **model 2 (final)**: fine-tuned CLIP ViT-B/16 in PyTorch, with near-duplicate-aware train/validation/test split and 5-fold cross-validation (Part 7)
 - `notebooks/04_model_comparison_xai.ipynb` — teacher feedback: dropout 0.05, up to 25 epochs with early stopping (patience 3), 5 settings, weight decay 4e-4 vs 1e-3, 4 models compared, adjustment runs, clean curves and explainable AI
+- `notebooks/05_clip_stable_training.ipynb` — CLIP ViT-B/16 retrained for smooth curves: weight averaging (EMA), layer-wise learning rates, weight decay 0.05, 25 epochs with early stopping, six settings
 
 ## Dataset
 [Human Action Recognition (HAR) Dataset on Kaggle](https://www.kaggle.com/datasets/meetnagadia/human-action-recognition-har-dataset) — 15 actions, ~12,600 labeled images.
