@@ -9,6 +9,7 @@
 - `notebooks/05_clip_stable_training.ipynb` — CLIP ViT-B/16 retrained for smooth curves: weight averaging (EMA), layer-wise learning rates, weight decay 0.05, 25 epochs with early stopping, six settings
 - `notebooks/06_model_selection.ipynb` — four models (two CLIP versions, ConvNeXt-Tiny, EfficientNet-B0) compared with the same curves, one chosen by a written rule
 - `notebooks/07_clip_fit_search.ipynb` — ten CLIP ViT-B/16 variants (freezing, learning rate, dropout, drop path, strong augmentation, mixup/cutmix, stopping on validation loss, a combination) trained two at a time on Kaggle's two GPUs, to find curves with a small train–validation gap
+- `notebooks/08_final_model.ipynb` — **final model**: CLIP ViT-B/16 variant J (8 of 12 blocks frozen, dropout 0.2, drop path 0.2, strong augmentation, mixup/cutmix), with learning curves, test results, explainable AI (occlusion maps, attention rollout), predictions on the unlabeled photos and 5-fold cross-validation
 
 ## Dataset
 [Human Action Recognition (HAR) Dataset on Kaggle](https://www.kaggle.com/datasets/meetnagadia/human-action-recognition-har-dataset) — 15 actions, ~12,600 labeled images.
